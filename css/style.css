@@ -1,0 +1,164 @@
+
+header{ background-color:white;}
+
+header h1{
+    font-size: 62px;
+    color:#df5500;
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    display: inline;
+}
+
+.encabezado{
+    font-size: 18px; 
+    font-family: 'Plus Jakarta Sans';
+    color: #f5f5f5;
+    background-color: #3f3f3f;
+    padding: 1%;
+    text-align: center;
+
+}
+
+.logo,.child{
+    text-align: left ;
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.child{
+    display: inline-block;
+}
+
+nav >a{display: block;}
+nav{
+    position: fixed;
+    height: 100%;
+    right: 0;
+    text-decoration:none;
+    text-align: center;
+    background-color: #1d1d1d;
+    font-size: 24px;
+    color: #D2D3D7;
+    z-index: 1;
+    top: 0%;
+    padding-top:20%;
+    padding: 3%;
+}
+
+h1#recetas,#ingrediente,#contacto{
+    text-align: left;
+    color:#D2D3D7;
+    background-color: #3f3f3f;
+    font-family: 'Baloo 2';
+    padding: 2%;
+    margin: 1% 10% 1% 2%;
+}
+
+.dropdown:hover .dropdown-content{ display:block;}
+.dropdown-content{
+    display: none;
+    min-width: 140px;
+    list-style: none;
+    z-index: 1;
+    color:#D2D3D7;
+}
+
+nav>a:hover { background-color: #df5500; color: #1d1d1d;}
+.dropdown > a:hover { background-color: #df5500; color: #1d1d1d; }
+.dropdown-content:hover{ background-color: #df5500; color: #1d1d1d; }
+
+.check-contenedor{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0% 23% 2% 23%;
+    align-content: center;
+    
+    background-image:url('fondo-papel.png');
+    background-color:#dadada;
+        
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 25px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.container{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.checkmark{
+    position:relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.boton{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.combinar{
+    text-align: center;
+    height: 80px;
+    width: 160px;
+    font-family: 'Baloo 2';
+    font-size: 24px;
+}
+.combinar:hover{
+    height: 80px;
+    width: 160px;
+    font-family: 'Baloo 2';
+    font-size: 26px;
+    background-color: rgb(255, 239, 148);
+    color: #df5500;
+}
+
+main>h2{
+    font-family:'Baloo 2';
+    text-align:center;
+    color:#df5500;
+    background-color:rgb(255, 239, 148);
+    width: 300px;
+    height: 70px;
+    margin: auto;
+    padding: 15px;
+}
+
+.ing>h2{
+    color: #1d1d1d;
+    font-family: 'Baloo 2';
+    text-align: center;
+}
+
+#formulario{
+    background-color: #D2D3D7;
+    padding: 2%;
+    margin: 1%;
+    margin-right: 12%;
+    
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0% 22%;
+}
+.punto{
+    list-style-type: none;
+}
+
+footer{
+    background-color:#3f3f3f;
+    padding: 2%;
+}
+footer>a{color:#D2D3D7;}
+footer>a:hover{color:#df5500;}
+
+label:nth-child(even){
+    background-color: rgb(236, 235, 230);
+}

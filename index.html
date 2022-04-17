@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <script src="https://kit.fontawesome.com/6df7f3f02e.js" crossorigin="anonymous"></script>
+    <title>Food Picker</title>
+    <link rel="icon" href="./img/foodpick.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>      
+            <div class="logo">
+                <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
+                <div class="child"><h1 class="logo">Food Picker</h1></div>
+            </div>    
+    </header>
+    
+    <nav>
+        <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
+        <a href="#contacto">Contacto</a>    
+        <a href="#recetas">Recetas</a>
+
+        <div class="dropdown">
+
+            <a href="#ingredientes">Ingredientes</a>    
+
+            <ul class="dropdown-content">
+               <li><a href="#frutas">Frutas</a></li>
+               <li><a href="#verduras">Verduras</a></li>
+               <li><a href="#proteinas">Proteínas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="encabezado">
+            <p>Solucioná tu comida solo con lo que tenés en la heladera o dando vuelta por la alacena, sorprenderte con una deliciosa receta nueva para cocinar.</p>
+            <p>Es simple, preparate para cocinar y marcá en este checklist los alimentos que dispongas y nosotros te damos la combinación:</p>
+        </div>
+
+        <h1 id="ingrediente" class="ingrediente">Ingredientes</h1>
+
+            <a href="ingredientes" id="ingredientes"></a>
+            <h2 id="frutas">Frutas</h2>
+
+        <div class="check-contenedor" id="fondo">
+            <section class="container">
+            <input type="checkbox" class="checkmark" name="ingrediente" id="anana"><label>Ananá</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="aranadano"><label>Arándano</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="banana"><label>Banana</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="ciruela"><label>Ciruela</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Cereza</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="durazno"><label>Durazno</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="frutilla"><label>Frutilla</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Mandarina</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Manzana</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Naranja</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Pera</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pomelo"><label>Pomelo</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="tomate"><label>Tomate</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="limon"><label>Limón</label>
+        </section>
+        </div>
+
+        <h2 id="verduras">Verduras</h2>
+    
+        <div class="check-contenedor" id="check-contenedor">
+            <section class="container">
+            <input type="checkbox" class="checkmark" name="ingrediente" id="Ajo"><label>Ajo</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="albahaca"><label>Albahaca</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="apio"><label>Apio</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Batata</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="durazno"><label>Berenjena</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="frutilla"><label>Calabaza</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Cebolla</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Cilantro</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Coliflor</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Champiñon</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pomelo"><label>Choclo</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="tomate"><label>Espinaca</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="limon"><label>Girgola</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="anana"><label>Kale</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="aranadano"><label>Lechuga</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="banana"><label>Morrón</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="ciruela"><label>Papa</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Pepino</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="durazno"><label>Perejil</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="frutilla"><label>Palta</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Puerro</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Portobelo</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Remolacha</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Rúcula</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pomelo"><label>Verdeo</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="tomate"><label>Zanahoria</label>
+            </section>
+        </div>
+        
+        <h2 id="proteinas">Proteinas</h2>
+
+        <div class="check-contenedor">
+            <section class="container">
+            <input type="checkbox" class="checkmark" name="ingrediente" id="arvejas"><label>Arvejas</label>
+            <input type="checkbox" class="checkmark" id="garbanzo"><label>Garbanzo</label>
+            <input type="checkbox" class="checkmark" id="almendras"><label>Almendras</label>
+            <input type="checkbox" class="checkmark" id="atun"><label>Atún</label>
+            <input type="checkbox" class="checkmark" id="ave"><label>Ave</label>
+            <input type="checkbox" class="checkmark" id="cerdo"><label>Cerdo</label>
+            <input type="checkbox" class="checkmark" id="cereal"><label>Cereal</label>
+            <input type="checkbox" class="checkmark" id="cremadeleche"><label>Crema de leche</label>
+            <input type="checkbox" class="checkmark" id="garbanzo"><label>Garbanzo</label>
+            <input type="checkbox" class="checkmark" id="harina"><label>Harina</label>
+            <input type="checkbox" class="checkmark" id="huevo"><label>Huevo</label>
+            <input type="checkbox" class="checkmark" id="leche"><label>Leche</label>
+            <input type="checkbox" class="checkmark" id="lenteja"><label>Lenteja</label>
+            <input type="checkbox" class="checkmark" id="mani"><label>Mani</label>
+            <input type="checkbox" class="checkmark" id="mariscos"><label>Mariscos</label>
+            <input type="checkbox" class="checkmark" id="nueces"><label>Nueces</label>
+            <input type="checkbox" class="checkmark" id="pescado"><label>Pescado</label>
+            <input type="checkbox" class="checkmark" id="porotos"><label>Porotos</label>
+            <input type="checkbox" class="checkmark" id="queso"><label>Queso</label>
+            <input type="checkbox" class="checkmark" id="quesocrema"><label>Queso crema</label>
+            <input type="checkbox" class="checkmark" id="quinoa"><label>Quinoa</label>
+            <input type="checkbox" class="checkmark" id="res"><label>Res</label>
+        </section>
+        </div>
+
+        <div class="boton">
+            <input type="submit" class="combinar" value="Combinar">
+        </div>
+
+        <h1 id="recetas" class="receta">Recetas</h1>
+
+        <div class="tarjetas">
+
+    <div class="tarjeta">
+    <ul class="punto">
+        <h1><li>Pancakes</li></h1>
+        <li><span name="harina" class="proteina">Harina</span>1/2 cup</li>
+        <li><span name="huevo" class="proteina">Huevo</span>1 beaten</li>
+        <li><span>Azucar</span>1 tbsp</li>
+        <li><span>Polvo de hornear</span>2 teasp</li>
+        <li><span>Sal</span>1 teasp</li>
+        <li><span>Aceite</span>1 tbsp</li>
+        <iframe width="420" height="220" src="https://www.youtube.com/embed/LWuuCndtJr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </ul>
+    </div>
+    <div class="tarjeta">
+    <ul class="punto">
+        <h1><li>Tarta</li></h1>
+        <li><span name="harina" class="proteina">Harina</span>1/2 cup</li>
+        <li><span name="huevo" class="proteina">Huevo</span>1 beaten</li>
+        <li><span>Azucar</span>1 tbsp</li>
+        <li><span>Polvo de hornear</span>2 teasp</li>
+        <li><span>Sal</span>1 teasp</li>
+        <li><span>Aceite</span>1 tbsp</li>
+        <iframe width="420" height="215" src="https://www.youtube.com/embed/LaVQystd9Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+</div>
+    <div class="tarjeta">
+    <ul class="punto">
+        <h1><li>Milanesa</li></h1>
+        <li><span name="harina" class="proteina">Harina</span>1/2 cup</li>
+        <li><span name="huevo" class="proteina">Huevo</span>1 beaten</li>
+        <li><span>Azucar</span>1 tbsp</li>
+        <li><span>Polvo de hornear</span>2 teasp</li>
+        <li><span>Sal</span>1 teasp</li>
+        <li><span>Aceite</span>1 tbsp</li>
+        <iframe width="420" height="215" src="https://www.youtube.com/embed/Kui1SgQtPZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+</div>    
+    <div class="tarjeta">
+    <ul class="punto">
+        <h1><li>Wok</li></h1>       
+        <li><span name="harina" class="proteina">Harina</span>1/2 cup</li>
+        <li><span name="huevo" class="proteina">Huevo</span>1 beaten</li>
+        <li><span>Azucar</span>1 tbsp</li>
+        <li><span>Polvo de hornear</span>2 teasp</li>
+        <li><span>Sal</span>1 teasp</li>
+        <li><span>Aceite</span>1 tbsp</li>
+        <iframe width="420" height="215" src="https://www.youtube.com/embed/hA6zII7_2UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+</div>
+    <div class="tarjeta">
+    <ul class="punto">
+        <h1><li>Empanadas</li></h1>
+        <li><span name="harina" class="proteina">Harina</span>1/2 cup</li>
+        <li><span name="huevo" class="proteina">Huevo</span>1 beaten</li>
+        <li><span>Azucar</span>1 tbsp</li>
+        <li><span>Polvo de hornear</span>2 teasp</li>
+        <li><span>Sal</span>1 teasp</li>
+        <li><span>Aceite</span>1 tbsp</li>
+        <iframe width="420" height="215" src="https://www.youtube.com/embed/dRxrabtdtQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+    </div>
+
+        </div>
+
+        <h1 class="contacto" id="contacto">Contacto</h1>
+        
+        <div class="formulario" id="formulario">
+        <form action="./show_data.html">
+    
+            <label for="txtNombre">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre">
+            <br>
+            <label for="txtApellido">Apellido</label>
+            <input type="text" name="txtApellido" id="txtApellido">
+            <br>
+            <label for="txtTelefono">Teléfono</label>
+            <input type="number" name="txtTelefono" id="txtTelefono" min="0">
+            <br>
+            <label for="txtMail">Mail</label>
+            <input type="email" name="" id="">
+            <br>
+            <label for="txtMensaje">Mensaje</label>
+            <textarea name="txtMensaje" id="" cols="100" rows="10">Dejanos tus comentarios acá...</textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    </main>
+<br>
+    <footer>
+        <a  href="" target = "_blank" ><i class="fa-brands fa-instagram-square"></i></a>
+        <a  href="" target = "_blank" ><i class="fa-brands fa-facebook-square"></i></i></a>
+        <a  href="" target = "_blank" ><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+</body>
+</html>
