@@ -3,6 +3,7 @@
 .item3 { grid-area: main; }
 .item4 { grid-area: footer; }
 
+/* Uso css grid para estructurar mi página entera */
 .grid-container {
 	display:grid;
 	grid-template-areas:
@@ -14,7 +15,7 @@
 	padding: 10px;
 }
 
-
+/* Animación de logo, sutíl transición de color en el texto */
 header h1{
     font-size: 62px;
     color:#dd6b00;
@@ -33,6 +34,7 @@ header h1{
     100% {color: #dd6b00; }
 }
 
+/* Le doy estilo y accomodo los contenidos de mi grilla */
 .grid-container > div {
 	background-color: rgba(255, 255, 255, 0.397);
 	text-align: center;
@@ -55,9 +57,15 @@ header h1{
     line-height: 30px;
 }
 
+/*Mi intención es que el menú de navegación fuera fixed
+para que uno pudiera seleccionar cualquier item del indice
+mientras navegara por la página, pero cuando le doy esta propiedad,
+me pisa elementos de la grilla. Todavía no pude solucionarlo así
+que lo dejé de esta manera. */
+
 nav >a{display: block;}
 nav{
-    position: grid fixed; /*era fixed, la dejo + grid para probar hasta llenar la página de contenido*/
+    position: grid;
     margin: auto;
     height: 100%;
     right: 0;
@@ -72,6 +80,8 @@ nav{
     padding: 3%;
 }
 
+/* Le da un estilo a los elementos de la lista (ul,li) y otro al resto del indice de navegación.
+Quisiera que se vean iguales. */
 nav>a[href="#inicio"],[href="#contacto"],[href="#recetas"],[href="#ingredientes"],[href="#frutas"],[href="#verduras"],[href="#proteinas"]{
     text-align: center;
     display: block;
@@ -176,6 +186,7 @@ main>h2{
     color: #f5f5f5;
     background-color: #3f3f3f;
 }
+/* Utilicé display flex para acomodar las recetas */
 .tarjetas{
     display: flex;
     flex-direction: row;
@@ -272,3 +283,20 @@ input[type=submit]:hover{
     text-align: center;
     display: block;
 }
+
+@media screen and (max-width: 640px) {
+    .grid-container {
+	background-color: #728300 ;
+}
+    }
+    
+    @media screen and (min-width: 640px) and (max-width: 1280px) {
+    
+    .grid-container { background-color: #728300;
+}
+    }
+    
+    @media screen and (min-width: 1280px) {
+    .grid-container { background-color: #728300;
+}
+    }
