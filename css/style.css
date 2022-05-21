@@ -1,45 +1,64 @@
-.grid-container{
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 4%;
-    grid-column-start: 0;
-    grid-column-end: 2;
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+	display:grid;
+	grid-template-areas:
+		'header header menu'
+		'main main menu'
+		'footer footer footer';
+	gap: 10px;
+	background-color:#728300;
+	padding: 10px;
 }
 
-
-header{ background-color:white;}
 
 header h1{
     font-size: 62px;
-    color:#df5500;
+    color:#dd6b00;
     font-family: 'Baloo 2';
-    font-weight: 700;
+    padding: 0px 20px;
     display: inline;
+    background-color: #ffffe9;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes logo {
+    0% {color:#dd6b00;}
+    50% {color: #ffbb00; }
+    100% {color: #dd6b00; }
+}
+
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.397);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
 }
 
 .encabezado{
-    font-size: 18px; 
+    font-size: 21px; 
     font-family: 'Plus Jakarta Sans';
-    color: #f5f5f5;
-    background-color: #3f3f3f;
-    padding: 1%;
+    color: #53443A;
+    background-color:#ffffe9;
+    margin-top: 30px;
+
+    padding: 5%;
     text-align: center;
-    padding-right: 30%;
 }
-
-.logo,.child{
-    text-align: left ;
-    margin-top:30px;
-    margin-left:20px;
-}
-
-.child{
-    display: inline-block;
+.encabezado p{
+    padding: 0% 15%;
+    line-height: 30px;
 }
 
 nav >a{display: block;}
 nav{
-    position: fixed;
+    position: grid fixed; /*era fixed, la dejo + grid para probar hasta llenar la página de contenido*/
+    margin: auto;
     height: 100%;
     right: 0;
     text-decoration:none;
@@ -53,7 +72,21 @@ nav{
     padding: 3%;
 }
 
-h1#recetas,#ingrediente,#contacto{
+nav>a[href="#inicio"],[href="#contacto"],[href="#recetas"],[href="#ingredientes"],[href="#frutas"],[href="#verduras"],[href="#proteinas"]{
+    text-align: center;
+    display: block;
+    color:#D2D3D7;
+    background-color: #3f3f3f;
+    font-family: 'Baloo 2';
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav>.logo-index{background-color: #3f3f3f00;}
+.dropdown-content{list-style: none;}
+
+h1>#titulos{
     text-align: left;
     color:#D2D3D7;
     background-color: #3f3f3f;
@@ -71,33 +104,34 @@ h1#recetas,#ingrediente,#contacto{
     color:#D2D3D7;
 }
 
-nav>a:hover { background-color: #df5500; color: #1d1d1d;}
-.dropdown > a:hover { background-color: #df5500; color: #1d1d1d; }
-.dropdown-content:hover{ background-color: #df5500; color: #1d1d1d; }
+.dropdown-content>div:hover{ background-color: #df5500; color: rgb(255, 239, 148);}
+nav>a:hover { background-color: #df5500; color: rgb(255, 239, 148);}
+.dropdown-content>a:hover{ background-color: #df5500;  color: rgb(255, 239, 148);}
 
 .check-contenedor{
     flex-direction: row;
     flex-wrap: wrap;
 
+    padding: 20px;
     margin: 0% 23% 2% 23%;
     align-content: center;
     
     background-image:url('fondo-papel.png');
-    background-color:#dadada;
-        
+    background-color:#3f3f3f;
+    color:#D2D3D7;
+
     text-align: center;
-    color: #1d1d1d;
     font-size: 25px;
     font-family: 'Plus Jakarta Sans';
 }
-
 .checkmark{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    position:relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 10px;
 }
-
-
 .boton{
     margin: 2%;
     display: flex;
@@ -105,6 +139,9 @@ nav>a:hover { background-color: #df5500; color: #1d1d1d;}
     align-items: center;
 }
 .combinar{
+    background-color: #3f3f3f;
+    color:#D2D3D7;
+    border: #1d1d1d00;
     text-align: center;
     height: 80px;
     width: 160px;
@@ -115,13 +152,10 @@ nav>a:hover { background-color: #df5500; color: #1d1d1d;}
     height: 80px;
     width: 160px;
     font-family: 'Baloo 2';
-    font-size: 26px;
-    background-color: rgb(255, 239, 148);
-    color: #df5500;
-}
-
-.main{
-    max-width: 80%;
+    font-size: 30px;
+    background-color: #df5500;
+    color: rgb(255, 239, 148);
+    border: #1d1d1d00;
 }
 
 main>h2{
@@ -134,64 +168,107 @@ main>h2{
     margin: auto;
     padding: 15px;
 }
-
-.ing>h2{
-    color: #1d1d1d;
-    font-family: 'Baloo 2';
-    text-align: center;
-}
-
-.formulario{
-    background-color: #D2D3D7;
-    padding: 2%;
-    margin: 1%;
-    margin-right: 12%;
-}
-.informacion{
-    
+#formulario{
+    display: block;
+    padding: 10px;
+    font-size: 21px; 
+    font-family: 'Plus Jakarta Sans';
+    color: #f5f5f5;
+    background-color: #3f3f3f;
 }
 .tarjetas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    margin: 0% 22%;
+    text-align: center;    
+}
+
+.punto>h1{
+    font-family:'Baloo 2';
+    text-align:center;
+    color:#df5500;
+    background-color:rgb(255, 239, 148);
 }
 .punto{
     list-style-type: none;
+}
+.punto>li{
+    background-color: #ffffff;
+    font-size: 23px;
+}
+#ingredientes{
+    background-color: #3f3f3f;
+    color: #ffffff;
+    padding: 60px;
+    font-family: 'Baloo 2';
+    font-size: 45px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+
+#contacto,#recetas{
+    background-color: #3f3f3f;
+    color: #ffffff;
+    padding: 60px;
+    font-family: 'Baloo 2';
+    font-size: 45px;
+    margin: 100px 0px;
 }
 
 footer{
     background-color:#3f3f3f;
     padding: 2%;
 }
-
 footer>a{color:#D2D3D7;}
 footer>a:hover{color:#df5500;}
 
-label:nth-child(even){
-    background-color: rgb(236, 235, 230);}
-    
-@media screen and (max-width: 640px) {
+input[type=text],[type=email],[type=number]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 1% 10%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-header h1{
-    font-size: 62px;
-    color:#df5500;
+input[type=submit]{
+    display: block;
+    background-color: #202020;
+    color:#D2D3D7;
+    border: #1d1d1d00;
+    text-align: center;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 2% 10%;
     font-family: 'Baloo 2';
-    font-weight: 700;
-    display: inline;
+    font-size: 24px;
 }
-nav >a{display: block;}
-
+input[type=submit]:hover{
+    height: 80px;
+    width: 80%;
+    font-family: 'Baloo 2';
+    font-size: 30px;
+    background-color: #df5500;
+    color: rgb(255, 239, 148);
+    border: #1d1d1d00;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 2% 10%;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-
-    .menu { background: red;
-    }
+#areaMensaje{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 1% 10%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-    @media screen and (min-width: 1280px) {
-    
-    .menu { background: green;
-    
-    }
+
+#formulario>div{
+    width: 80%;
+    margin: 0% 10%;
+    text-align: center;
+    display: block;
+}
