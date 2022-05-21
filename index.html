@@ -16,51 +16,57 @@
 </head>
 
 <body>
-    <header>      
-            <div class="logo">
-                <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
-                <div class="child"><h1 class="logo">Food Picker</h1></div>
-            </div>    
-    </header>
+
+<div class="grid-container">
+
+    <div class="item1">
+
+        <header>
+            <div class="child"><h1 class="logo">Food Picker</h1></div>
+            
+            <div class="encabezado">
+                <p>Solucioná tu comida solo con lo que tenés en la heladera o dando vuelta por la alacena, sorprenderte con una deliciosa receta nueva para cocinar.</p>
+                    <p>Es simple, preparate para cocinar y marcá en este checklist los alimentos que dispongas y nosotros te damos la combinación:</p>
+            </div>
+        </header>
+
+    </div>
     
-    <nav>
-        <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
+    <div class="item2">
+
+        <nav>
+        <div class="logo-index"><a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a></div>
         <a href="#contacto">Contacto</a>    
         <a href="#recetas">Recetas</a>
-
+      
         <div class="dropdown">
 
-            <a href="#ingredientes">Ingredientes</a>    
+            <a href="#ingredientes">Opciones</a>    
 
             <ul class="dropdown-content">
-               <li><a href="#frutas">Frutas</a></li>
-               <li><a href="#verduras">Verduras</a></li>
-               <li><a href="#proteinas">Proteínas</a></li>
+               <li class="nav-item"><a href="#frutas">Frutas</a></li>
+               <li class="nav-item"><a href="#verduras">Verduras</a></li>
+               <li class="nav-item"><a href="#proteinas">Proteínas</a></li>
             </ul>
         </div>
-    </nav>
+        </nav>
 
-    <main>
-        <div class="encabezado">
-            <p>Solucioná tu comida solo con lo que tenés en la heladera o dando vuelta por la alacena, sorprenderte con una deliciosa receta nueva para cocinar.</p>
-            <p>Es simple, preparate para cocinar y marcá en este checklist los alimentos que dispongas y nosotros te damos la combinación:</p>
-        </div>
+    </div>
+    
+    <div class="item3">
 
-        <h1 id="ingrediente" class="ingrediente">Ingredientes</h1>
-
-            <a href="ingredientes" id="ingredientes"></a>
+        <main>
+            <h1 id="ingredientes" class="ingredientes">Ingredientes</h1>  
+            <a href="ingredientes" id="#ingredientes"></a>
             <h2 id="frutas">Frutas</h2>
 
         <div class="check-contenedor" id="fondo">
             <section class="container">
             <input type="checkbox" class="checkmark" name="ingrediente" id="anana"><label>Ananá</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="aranadano"><label>Arándano</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="banana"><label>Banana</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="ciruela"><label>Ciruela</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Cereza</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="durazno"><label>Durazno</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="frutilla"><label>Frutilla</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Mandarina</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Manzana</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Naranja</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Pera</label>
@@ -74,7 +80,6 @@
     
         <div class="check-contenedor" id="check-contenedor">
             <section class="container">
-            <input type="checkbox" class="checkmark" name="ingrediente" id="Ajo"><label>Ajo</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="albahaca"><label>Albahaca</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="apio"><label>Apio</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Batata</label>
@@ -83,22 +88,14 @@
             <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Cebolla</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Cilantro</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Coliflor</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Champiñon</label>
+            <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Hongos</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="pomelo"><label>Choclo</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="tomate"><label>Espinaca</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="limon"><label>Girgola</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="anana"><label>Kale</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="aranadano"><label>Lechuga</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="banana"><label>Morrón</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="ciruela"><label>Papa</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="cereza"><label>Pepino</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="durazno"><label>Perejil</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="frutilla"><label>Palta</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="mandarina"><label>Puerro</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="manzana"><label>Portobelo</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="naranja"><label>Remolacha</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="pera"><label>Rúcula</label>
-            <input type="checkbox" class="checkmark" name="ingrediente" id="pomelo"><label>Verdeo</label>
             <input type="checkbox" class="checkmark" name="ingrediente" id="tomate"><label>Zanahoria</label>
             </section>
         </div>
@@ -107,27 +104,18 @@
 
         <div class="check-contenedor">
             <section class="container">
-            <input type="checkbox" class="checkmark" name="ingrediente" id="arvejas"><label>Arvejas</label>
-            <input type="checkbox" class="checkmark" id="garbanzo"><label>Garbanzo</label>
-            <input type="checkbox" class="checkmark" id="almendras"><label>Almendras</label>
-            <input type="checkbox" class="checkmark" id="atun"><label>Atún</label>
             <input type="checkbox" class="checkmark" id="ave"><label>Ave</label>
             <input type="checkbox" class="checkmark" id="cerdo"><label>Cerdo</label>
             <input type="checkbox" class="checkmark" id="cereal"><label>Cereal</label>
             <input type="checkbox" class="checkmark" id="cremadeleche"><label>Crema de leche</label>
-            <input type="checkbox" class="checkmark" id="garbanzo"><label>Garbanzo</label>
+            <input type="checkbox" class="checkmark" id="garbanzo"><label>Frutos Secos</label>
             <input type="checkbox" class="checkmark" id="harina"><label>Harina</label>
             <input type="checkbox" class="checkmark" id="huevo"><label>Huevo</label>
             <input type="checkbox" class="checkmark" id="leche"><label>Leche</label>
-            <input type="checkbox" class="checkmark" id="lenteja"><label>Lenteja</label>
-            <input type="checkbox" class="checkmark" id="mani"><label>Mani</label>
+            <input type="checkbox" class="checkmark" id="lenteja"><label>Legumbres</label>
             <input type="checkbox" class="checkmark" id="mariscos"><label>Mariscos</label>
-            <input type="checkbox" class="checkmark" id="nueces"><label>Nueces</label>
             <input type="checkbox" class="checkmark" id="pescado"><label>Pescado</label>
-            <input type="checkbox" class="checkmark" id="porotos"><label>Porotos</label>
             <input type="checkbox" class="checkmark" id="queso"><label>Queso</label>
-            <input type="checkbox" class="checkmark" id="quesocrema"><label>Queso crema</label>
-            <input type="checkbox" class="checkmark" id="quinoa"><label>Quinoa</label>
             <input type="checkbox" class="checkmark" id="res"><label>Res</label>
         </section>
         </div>
@@ -136,7 +124,7 @@
             <input type="submit" class="combinar" value="Combinar">
         </div>
 
-        <h1 id="recetas" class="receta">Recetas</h1>
+                <h1 id="recetas" class="receta">Recetas</h1>
 
         <div class="tarjetas">
 
@@ -200,37 +188,46 @@
     </ul>
     </div>
 
-        </div>
+</div>
 
-        <h1 class="contacto" id="contacto">Contacto</h1>
-        
-        <div class="formulario" id="formulario">
+<h1 class="contacto" id="contacto">Contacto</h1>
+    <div class="formulario" id="formulario">
+
         <form action="./show_data.html">
-    
-            <label for="txtNombre">Nombre</label>
-            <input type="text" name="txtNombre" id="txtNombre">
-            <br>
-            <label for="txtApellido">Apellido</label>
-            <input type="text" name="txtApellido" id="txtApellido">
-            <br>
-            <label for="txtTelefono">Teléfono</label>
-            <input type="number" name="txtTelefono" id="txtTelefono" min="0">
-            <br>
-            <label for="txtMail">Mail</label>
-            <input type="email" name="" id="">
-            <br>
-            <label for="txtMensaje">Mensaje</label>
-            <textarea name="txtMensaje" id="" cols="100" rows="10">Dejanos tus comentarios acá...</textarea>
-            <br>
-            <input type="submit" value="Enviar">
+            
+        <div class="tituloForm"><label for="txtNombre">Nombre</label></div>
+        <input type="text" name="txtNombre" id="txtNombre">
+        
+        <div class="tituloForm"><label for="txtApellido" class="tituloForm">Apellido</label></div>
+        <input type="text" name="txtApellido" id="txtApellido">
+
+        <div class="tituloForm"><label for="txtTelefono" class="tituloForm">Teléfono</label></div>
+        <input type="number" name="txtTelefono" id="txtTelefono" min="0">
+
+        <div class="tituloForm"><label for="txtMail" class="tituloForm">Mail</label></div>
+        <input type="email" name="" id="">
+
+        <div class="tituloForm"><label for="txtMensaje" class="tituloForm">Mensaje</label></div>
+        <textarea name="txtMensaje" id="areaMensaje">Dejanos tus comentarios acá...</textarea>
+
+        <input type="submit" value="Enviar">
+    </div> 
         </form>
-    </div>
+</div>
     </main>
-<br>
-    <footer>
+
+
+    <div class="item4">
+
+        <footer>
         <a  href="" target = "_blank" ><i class="fa-brands fa-instagram-square"></i></a>
         <a  href="" target = "_blank" ><i class="fa-brands fa-facebook-square"></i></i></a>
         <a  href="" target = "_blank" ><i class="fa-brands fa-linkedin"></i></a>
-    </footer>
-</body>
+        </footer>
+
+    </div>
+
+
+</div>
+    </body>
 </html>
