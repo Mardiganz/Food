@@ -15,31 +15,38 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
+<div class="grid-container">
+
 <body>
-    <header>      
+
+    <div class="header grid-item 1">
+        <header>      
             <div class="logo">
                 <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
                 <div class="child"><h1 class="logo">Food Picker</h1></div>
             </div>    
-    </header>
-    
+        </header>
+    </div>
+
+    <div class="navegacion grid-item 2">
     <nav>
         <a href="#inicio" alt="inicio" id="inicio"><img src="./img/foodpick.ico" width="120px" class="foodpicker"></a>
         <a href="#contacto">Contacto</a>    
         <a href="#recetas">Recetas</a>
 
         <div class="dropdown">
-
-            <a href="#ingredientes">Ingredientes</a>    
+            <a href="#ingredientes">Ingredientes</a>
 
             <ul class="dropdown-content">
                <li><a href="#frutas">Frutas</a></li>
                <li><a href="#verduras">Verduras</a></li>
                <li><a href="#proteinas">Proteínas</a></li>
             </ul>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </div>
 
+    <div class="principal-grid-item3">
     <main>
         <div class="encabezado">
             <p>Solucioná tu comida solo con lo que tenés en la heladera o dando vuelta por la alacena, sorprenderte con una deliciosa receta nueva para cocinar.</p>
@@ -135,7 +142,8 @@
         <div class="boton">
             <input type="submit" class="combinar" value="Combinar">
         </div>
-
+    </div>
+    <div class="recetas grid-item 4">
         <h1 id="recetas" class="receta">Recetas</h1>
 
         <div class="tarjetas">
@@ -199,38 +207,49 @@
         <iframe width="420" height="215" src="https://www.youtube.com/embed/dRxrabtdtQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </ul>
     </div>
-
+</div>
         </div>
-
+        <div class="contacto grid-item 5">
         <h1 class="contacto" id="contacto">Contacto</h1>
         
         <div class="formulario" id="formulario">
         <form action="./show_data.html">
     
+            <div class="informacion">
             <label for="txtNombre">Nombre</label>
             <input type="text" name="txtNombre" id="txtNombre">
-            <br>
+            </div>
+            <div class="informacion">
             <label for="txtApellido">Apellido</label>
             <input type="text" name="txtApellido" id="txtApellido">
-            <br>
+            </div>
+            <div class="informacion">
             <label for="txtTelefono">Teléfono</label>
             <input type="number" name="txtTelefono" id="txtTelefono" min="0">
-            <br>
+            </div>
+            <div class="informacion">
             <label for="txtMail">Mail</label>
             <input type="email" name="" id="">
-            <br>
+            </div>
+            <div class="informacion">
             <label for="txtMensaje">Mensaje</label>
             <textarea name="txtMensaje" id="" cols="100" rows="10">Dejanos tus comentarios acá...</textarea>
-            <br>
+            </div>
+            <div class="informacion">
             <input type="submit" value="Enviar">
+            </div>
         </form>
     </div>
+</div>
     </main>
-<br>
+    <div class="footer grid-item 6">
     <footer>
         <a  href="" target = "_blank" ><i class="fa-brands fa-instagram-square"></i></a>
         <a  href="" target = "_blank" ><i class="fa-brands fa-facebook-square"></i></i></a>
         <a  href="" target = "_blank" ><i class="fa-brands fa-linkedin"></i></a>
     </footer>
+</div>
 </body>
+</div>
+
 </html>
